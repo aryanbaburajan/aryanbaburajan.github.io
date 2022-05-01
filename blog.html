@@ -54,19 +54,6 @@
 			font-size: 1.2em;
 		}
 
-		.back {
-			position: fixed;
-			top: 10em;
-			right: 5em;
-			transition-duration: 0.2s;
-			font-size: 1.2em;
-			text-align: right;
-		}
-
-		.back:hover {
-			transform: translate(0.5em, 0px);
-		}
-
 		.switch .before {
 			display: block;
 		}
@@ -86,6 +73,14 @@
 		.switch:hover .after {
 			display: block;
 		}
+
+		@media only screen and (max-width: 820px) {
+			body {
+				margin: 20px;
+				margin-top: 50px;
+			}
+		}
+
 	</style>
 </head>
 <body>
@@ -100,14 +95,9 @@
 				</h2>
 			</a>
 		</div>
-	</div>
-	<a class="back switch" href="./index.html">
-		<span class="before">
-			aryanbaburajan.
-		</span>
-		<span class="after">
+		<a href="./index.html">
 			aryanbaburajan.github.io
-		</span>
-	</a>
+		</a>
+	</div>
 </body>
 </html>

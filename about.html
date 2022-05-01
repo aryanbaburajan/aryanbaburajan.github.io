@@ -8,77 +8,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style type="text/css">
-		html {
-		    overflow: scroll;
-		    overflow-x: hidden;
-		}
-		::-webkit-scrollbar {
-		    width: 0;
-		    background: transparent;
-		}
-		
-		::-webkit-scrollbar-thumb {
-		    background: #FF0000;
-		}
-
-		body {
-			background-color: #000000;
-			color: #FFFFFF;
-			margin-top: 10em;
-			margin-bottom: 10em;
-			margin-left: 20em;
-			margin-right: 20em;
-			font-family: "Roboto";
-			line-height: 30px;
-		}
-
-		h1 {
-			color: #FED900;
-		}
-
-		a {
-			color: inherit;
-			text-decoration: inherit;
-		}
-
-		p {
-			font-size: 1.2em;
-		}
-
-		.back {
-			position: fixed;
-			top: 10em;
-			right: 5em;
-			transition-duration: 0.2s;
-			font-size: 1.2em;
-			text-align: right;
-		}
-
-		.back:hover {
-			transform: translate(0.5em, 0px);
-		}
-
-		.back .before {
-			display: block;
-		}
-
-		.back .after {
-			display: none;
-		}
-
-		.back:hover {
-			cursor: pointer;
-		}
-
-		.back:hover .before {
-			display: none;
-		}
-
-		.back:hover .after {
-			display: block;
-		}
-	</style>
+	<link rel="stylesheet" href="./styles/blog.css">
 </head>
 <body>
 	<div class="content">
@@ -92,14 +22,9 @@
 			<br/><br/>
 			<a class="resume" href="./files/resume.pdf" target="_blank">My resume</a>
 		</p>
-	</div>
-	<a class="back" href="./index.html">
-		<span class="before">
-			aryanbaburajan.
-		</span>
-		<span class="after">
+		<a href="./index.html">
 			aryanbaburajan.github.io
-		</span>
-	</a>
+		</a>
+	</div>
 </body>
 </html>
