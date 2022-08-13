@@ -4,6 +4,16 @@ body {
 	color: #ffffff;
 }
 
+::-moz-selection {
+	color: #000000;
+	background: #ffffff;
+}
+
+::selection {
+	color: #000000;
+	background: #ffffff;
+}
+
 a {
 	color: #ffffff;
 }
@@ -17,6 +27,30 @@ a {
 
 .heading {
 	margin-top: 0;
+}
+
+.menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.menu button {
+	font-family: "Roboto Mono", monospace;
+	background-color: #000000;
+	color: #ffffff;
+	display: block;
+	padding: 5px;
+	width: 200px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 14px;
+	margin: none;
+}
+
+.menu button:hover {
+	background-color: #ffffff;
+	color: #000000;
 }
 
 @media only screen and (min-width: 600px) {
