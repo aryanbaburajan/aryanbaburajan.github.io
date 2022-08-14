@@ -52,17 +52,3 @@ function copyLinkToHighlight() {
       encodeURIComponent(window.getSelection().getRangeAt(0).toString())
   );
 }
-
-function openSource() {
-  let url =
-    "https://github.com/aryanbaburajan/aryanbaburajan.github.io/blob/main/";
-
-  if (window.location.pathname == "/") {
-    url += "index.html";
-  } else {
-    url += window.location.pathname;
-  }
-
-  console.log(url);
-  window.open(url, "_blank").focus();
-}
