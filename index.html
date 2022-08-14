@@ -62,7 +62,9 @@
       <button onclick="history.forward()">Forward</button>
       <button onclick="window.location.reload()">Reload</button>
       <button onclick="window.print();">Print</button>
-      <button onclick="window.open('view-source:'+location.href)">
+      <button
+        onclick='window.open("https\://github.com/aryanbaburajan/aryanbaburajan.github.io/" + window.location.href.replace(window.location.pathname, "") , "_blank").focus();'
+      >
         View Source
       </button>
     </div>
