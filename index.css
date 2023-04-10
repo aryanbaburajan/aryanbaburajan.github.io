@@ -29,37 +29,47 @@ a {
 	margin-top: 0;
 }
 
-.menu {
-	position: absolute;
-	top: 0;
-	left: 0;
+@media only screen and (min-width: 600px) {
+	.content {
+		margin: 10% 25% 0px;
+		padding: 1em;
+		/* transform: translate(-50%, -50%); */
+	}
 }
 
-.menu button {
-	font-family: "Roboto Mono", monospace;
+.tab {
+	overflow: hidden;
 	background-color: #000000;
-	color: #ffffff;
-	display: block;
-	padding: 5px;
-	width: 200px;
-	text-decoration: none;
-	text-align: center;
-	font-size: 14px;
-	margin: none;
 }
 
-.menu button:hover {
+.tab button {
+	font-family: "Roboto Mono", monospace;
+	background-color: inherit;
+	color: #ffffff;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.tab button:hover {
+	background-color: #000000;
+}
+
+.tab button.active {
 	background-color: #ffffff;
 	color: #000000;
 }
 
-@media only screen and (min-width: 600px) {
-	.content {
-		margin: 0;
-		padding: 1em;
-		transform: translate(-50%, -50%);
-		position: absolute;
-		top: 50%;
-		left: 50%;
-	}
+.tabcontent {
+	display: none;
+	border-top: none;
+}
+
+.project h4 {
+	text-decoration: underline;
+}
+
+.project blockquote {
+	width: 50%;
 }
