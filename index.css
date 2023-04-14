@@ -73,3 +73,13 @@ a {
 .project blockquote {
 	width: 50%;
 }
+
+.project video {
+	max-width: 100%;
+	max-height: 50vw;
+}
+
+.project img {
+	max-width: 100%;
+	max-height: 50vw;
+}
