@@ -17,7 +17,16 @@ a {
     font-size: 0.9em;
     width: 45em;
     line-height: 2em;
-    list-style-type: "-";
+}
+
+@media only screen and (max-width: 700px) {
+    #content {
+        position: static;
+        left: 0%;
+        top: 0%;
+        transform: translate(0%, 0%);
+        width: 100%;
+    }
 }
 
 #footer {
