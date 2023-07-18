@@ -1,8 +1,8 @@
 # Hey.
-I'm Aryan, a programmer, music enthusiast and an
-inquisitive human. I love building things — games, applications, libraries, or
+I'm **Aryan**, a **programmer**, **music enthusiast** and an
+**inquisitive human**. I love building things — games, applications, libraries, or
 tools that change the way things work. I specialize in C++, with which I'm
-currently developing a game engine, [Ducktape](https://github.com/DucktapeEngine/Ducktape), 
+currently developing a game engine, [**Ducktape**](https://github.com/DucktapeEngine/Ducktape), 
 using OpenGL.
 
 Want to say hi? Feel free! [Mail](mailto:aryanbaburajan2007@gmail.com)
