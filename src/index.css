@@ -10,9 +10,13 @@ a {
 }
 
 #content {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, 0%);
     font-size: 0.9em;
     /* margin: 12em 22em 0em 22em; */
-    margin: 12em 25% 0em 25%;
+    width: 50%;
     line-height: 2em;
     list-style-type: "-";
 }
