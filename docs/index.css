@@ -15,8 +15,7 @@ a {
     top: 20%;
     transform: translate(-50%, 0%);
     font-size: 0.9em;
-    /* margin: 12em 22em 0em 22em; */
-    width: 50%;
+    width: 45em;
     line-height: 2em;
     list-style-type: "-";
 }
