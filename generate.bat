@@ -1,1 +1,1 @@
-python3 aryanbnb.py
+python3 aryanbnb.py && echo Generated Static Site.
