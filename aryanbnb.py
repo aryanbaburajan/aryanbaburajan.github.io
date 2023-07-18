@@ -16,3 +16,5 @@ for subdir, dirs, files in os.walk("./docs"):
             html = open(os.path.join(subdir, file).replace(".md", ".html"), "w")
             html.write(header + markdown.markdown(md) + footer)
             html.close()
+
+print("Static Site Generated.")
