@@ -11,7 +11,8 @@ a {
 
 #content {
     font-size: 0.9em;
-    margin: 12em 22em 0em 22em;
+    /* margin: 12em 22em 0em 22em; */
+    margin: 12em 25% 0em 25%;
     line-height: 2em;
     list-style-type: "-";
 }
