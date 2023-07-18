@@ -1,0 +1,30 @@
+body {
+    background-color: #151515;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-underline-offset: 5px;
+    color: inherit;
+}
+
+#content {
+    font-size: 0.9em;
+    margin: 12em 22em 0em 22em;
+    line-height: 2em;
+    list-style-type: "-";
+}
+
+#footer {
+    padding: 5em 0em 2em 0em;
+}
+
+#links {
+    text-align: right;
+    float: right;
+}
+
+#links i {
+    padding: 0.2em;
+}
