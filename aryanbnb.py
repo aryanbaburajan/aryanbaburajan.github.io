@@ -2,43 +2,53 @@ import os
 import shutil
 import markdown
 
-shutil.rmtree("./docs")
-shutil.copytree("./src", "./docs")
+def preprocess_py(htmlSite):
+    start_tag = "<py>"
+    end_tag = "</py>"
 
-(header, footer) = open("./docs/template.html").read().split("<CONTENT/>")
-os.remove("./docs/template.html")
+    while start_tag in htmlSite and end_tag in htmlSite:
+        s_idx = htmlSite.find(start_tag)
+        e_idx = htmlSite.find(end_tag) + len(end_tag)
 
-for subdir, dirs, files in os.walk("./docs"):
-    for file in files:
-        if (file.endswith(".md")):
-            os.rename(os.path.join(subdir, file), os.path.join(subdir, file).replace(".md", ".html"))
+        code = htmlSite[s_idx + len(start_tag):e_idx - len(end_tag)]
+        context = {}
+        exec(code, context)
+        value = context['main']()
 
-for subdir, dirs, files in os.walk("./docs"):
-    for file in files:
-        if (file.endswith(".html")):
-            md = open(os.path.join(subdir, file).replace(".md", ".html"), "r").read()
+        htmlSite = htmlSite[:s_idx] + value + htmlSite[e_idx:]
 
-            if ("<py>" in md):
-                code = md.split("<py>")[1]
-                code = code.split("</py>")[0]
+    return htmlSite
 
-                context = {}
-                exec(code, context)
-                value = context['main']()
+def generate():
+    shutil.rmtree("./docs")
+    shutil.copytree("./src", "./docs")
 
-                s_idx = md.find('<py>')
-                e_idx = md.find('</py>') + len('</py>')
-                md = md[:s_idx] + value + md[e_idx:]
+    (header, footer) = open("./docs/template.html").read().split("<CONTENT/>")
+    os.remove("./docs/template.html")
 
-            htmlSite = header + markdown.markdown(md) + footer
+    for subdir, dirs, files in os.walk("./docs"):
+        for file in files:
+            if file.endswith(".md"):
+                os.rename(os.path.join(subdir, file), os.path.join(subdir, file).replace(".md", ".html"))
 
-            relative_path = os.path.relpath(os.path.join(subdir, file), start="./docs")
-            depth = len(relative_path.split(os.path.sep))
-            htmlSite = htmlSite.replace("<ROOT/>", depth * ".")
+    for subdir, dirs, files in os.walk("./docs"):
+        for file in files:
+            if file.endswith(".html"):
+                md = open(os.path.join(subdir, file).replace(".md", ".html"), "r").read()
 
-            html = open(os.path.join(subdir, file).replace(".md", ".html"), "w")
-            html.write(htmlSite)
-            html.close()
+                htmlSite = header + markdown.markdown(md) + footer
 
+                # <py> preprocessor
+                htmlSite = preprocess_py(htmlSite)
 
-print("Static Site Generated.")
+                # <ROOT/> preprocessor
+                relative_path = os.path.relpath(os.path.join(subdir, file), start="./docs")
+                depth = len(relative_path.split(os.path.sep))
+                htmlSite = htmlSite.replace("<ROOT/>", depth * ".")
+
+                html = open(os.path.join(subdir, file).replace(".md", ".html"), "w")
+                html.write(htmlSite)
+                html.close()
+    print("Static Site Generated.")
+
+generate()

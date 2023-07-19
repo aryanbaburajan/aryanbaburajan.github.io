@@ -33,6 +33,6 @@ def main():
     for filename in os.listdir("./src/blog/"):
         f = os.path.join("./src/blog/", filename)
         if os.path.isfile(f) and filename.endswith(".md"):
-            md += "- [" + (filename.split(".")[0]).title() + "](./blog/" + filename.replace(".md", ".html") + ")\n"
+            md += '- <a href="./blog/' + filename.replace(".md", ".html") + '" title="' + (filename.split(".")[0]).title() + '">' + (filename.split(".")[0]).title() + '</a>\n'
     return md
 </py>
