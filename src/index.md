@@ -26,4 +26,13 @@ Got an internship? [Resume](./resume.pdf)
 - The First Donut - First Donut made with Blender.
 
 ### Blog
-- [NaN](./404.html)
+<py>
+import os
+def main():
+    md = ""
+    for filename in os.listdir("./src/blog/"):
+        f = os.path.join("./src/blog/", filename)
+        if os.path.isfile(f) and filename.endswith(".md"):
+            md += "- [" + (filename.split(".")[0]).title() + "](./blog/" + filename.replace(".md", ".html") + ")\n"
+    return md
+</py>
