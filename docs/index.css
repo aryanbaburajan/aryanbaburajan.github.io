@@ -9,6 +9,13 @@ a {
     color: inherit;
 }
 
+code {
+    background-color: #252525;
+    padding: 0.5em 1em 0.5em 1em;
+    margin: 0.5em;
+    display: block;
+}
+
 #content {
     position: absolute;
     left: 50%;

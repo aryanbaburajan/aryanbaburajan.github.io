@@ -40,7 +40,7 @@ def main():
         f = os.path.join("./src/blog/", filename)
         if os.path.isfile(f) and filename.endswith(".md"):
             href = './blog/' + filename.replace(".md", ".html")
-            title = filename.split(".")[0].title()
+            title = filename.split(".")[0].replace("-", " ").title()
             time = os.path.getmtime('./src/blog/' + filename)
             date = date = datetime.fromtimestamp(time).strftime('%Y-%m-%d')
             md += f'<li>{date} — <a href="{href}">{title}</a></li>\n'
