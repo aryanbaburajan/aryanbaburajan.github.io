@@ -42,12 +42,11 @@ set (CMAKE_CXX_STANDARD 17)`
 
 Now it's time to build it.
 Go to the root of your project, and run these commands.
-```
-mkdir Build
-cd Build
-cmake ..
-make
-```
+`mkdir Build`
+`cd Build`
+`cmake ..`
+`make`
+
 Reminds me, I never went through how to install CMake and Make. That's funny, but let's just hope you figure that part out somehow. Make is usually pre-installed when you install MinGW but if not, ([CMake](https://cmake.org/install/), [Make](https://stackoverflow.com/a/54086635))
 
 Anyways, if you get the "Congrats! You created your first window!" window when running the program, which is in `Build/` Congratulations! You've succeeded.
