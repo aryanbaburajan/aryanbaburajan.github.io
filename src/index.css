@@ -1,12 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #151515;
-    color: #ffffff;
+    background-color: #11111b;
+    color: #cdd6f4;
     font-family: 'Poppins', sans-serif;
 }
 
 a {
     text-underline-offset: 5px;
-    color: inherit;
+    color: #89b4fa;
+}
+
+h1, h2, h3 {
+    color: #89b4fa;
+}
+
+img {
+    max-width:100%;
+    max-height:100%;
 }
 
 code {
@@ -39,6 +52,18 @@ code {
     padding: 0.2em;
 }
 
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 @media only screen and (max-width: 700px) {
     #content {
         position: static;
@@ -52,5 +77,9 @@ code {
     #footer, #links {
         text-align: center;
         float: none;
+    }
+
+    .column {
+        width: 100%;
     }
 }

@@ -10,20 +10,21 @@ Want to say hi? Feel free! [Mail](mailto:aryanbaburajan2007@gmail.com)
 Got an internship? [Resume](./resume.pdf)
 
 ### Software Developer
-- Ducktape - Open source, C++, OpenGL 3D game engine that focuses on being fast, and powerful.
-- Speaker at KochiFOSS - Gave a talk about Ducktape as a Speaker in the KochiFOSS event held at Kochi by the FOSSUnited organization.
-- Emotify - JavaScript library for adding custom emotes into your website.
-- DirectShare - File sharing service made with Node.js.
-- aryanbnb - Static Site Generator, just for this portfolio.
+- [Ducktape](https://github.com/ducktapeengine/ducktape) - Open source, C++, OpenGL 3D game engine that focuses on being fast, and powerful.
+- [Speaker at KochiFOSS](https://www.youtube.com/watch?v=m9-Aq3A2LyY) - Gave a talk about Ducktape as a Speaker in the KochiFOSS event held at Kochi by the FOSSUnited organization.
+- [Emotify](https://emotify.js.org) - JavaScript library for adding custom emojies into your website.
+- [DirectShare](https://github.com/aryanbaburajan/directshare) - File sharing service made with Node.js.
+- [aryanbnb](https://github.com/aryanbaburajan/aryanbaburajan.github.io) - Static Site Generator, just for this portfolio.
 
 ### Game Developer 
-- Duck Duck Golf - 3d golf obstacle course.
-- Chaos just kinda had its charm I guess - Explosive simulator where you drive over houses and Nuke an entire city.
-- Woosh! - Train sandbox.
-- Hectagon - Procedural island generator.
+- [Duck Duck Golf](https://aryanbaburajan.itch.io/duck-duck-golf) - 3d golf obstacle course.
+- [Chaos just kinda had its charm I guess](https://aryanbaburajan.itch.io/chaos-just-kinda-had-its-charm-ig) - Explosive simulator where you drive over houses and Nuke an entire city.
+- [Woosh!](https://aryanbaburajan.itch.io/woosh) - Train sandbox.
+- [Hectagon](https://aryanbaburajan.itch.io/hectagon) - Procedural island generator.
+- [VROOM](https://aryanbaburajan.itch.io/vroom) - Procedurally generated racing game prototype.
 
 ### Art Developer?
-- The First Donut - First Donut made with Blender.
+- [The First Donut](https://www.youtube.com/shorts/9RT5-4zbPNM) - First Donut made with Blender.
 
 ### Blog
 <py>
