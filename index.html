@@ -13,66 +13,69 @@
     />
     <base target="_blank" />
     <style>
-body {
-  font-family: "Satoshi", sans-serif;
-  margin: 0;
-}
+      body {
+        font-family: "Satoshi", sans-serif;
+        margin: 0;
+      }
 
-main {
-  display: flex;
-  justify-content: center;
-  line-height: 1.6;
-  padding: 0 16px;
-}
+      main {
+        display: flex;
+        justify-content: center;
+        line-height: 1.6;
+        padding: 0 16px;
+      }
 
-main > div {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  max-width: 600px;
-  width: 100%;
-}
+      main > div {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        max-width: 600px;
+        width: 100%;
+      }
 
-.float-right {
-  float: right;
-  white-space: nowrap;
-}
+      .float-right {
+        float: right;
+        white-space: nowrap;
+      }
 
-.project-item {
-  overflow: hidden;
-}
+      .project-item {
+        overflow: hidden;
+      }
 
-/* responsive adjustments */
-@media (max-width: 768px) {
-  main > div {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
+      @media (max-width: 768px) {
+        main > div {
+          margin-top: 50px;
+          margin-bottom: 50px;
+        }
 
-  .float-right {
-    float: none;
-    display: block;
-    text-align: right;
-    margin-top: 8px;
-  }
-}
+        .float-right {
+          float: none;
+          display: block;
+          text-align: right;
+          margin-top: 8px;
+        }
+      }
 
-@media (max-width: 480px) {
-  main {
-    flex-direction: column;
-    align-items: center;
-  }
+      @media (max-width: 480px) {
+        main {
+          flex-direction: column;
+          align-items: center;
+        }
 
-  main > div {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 0 10px;
-  }
+        main > div {
+          margin-top: 30px;
+          margin-bottom: 30px;
+          padding: 0 10px;
+        }
 
-  .float-right {
-    text-align: left;
-  }
-}
+        ul {
+          list-style-position: inside;
+          padding-left: 0;
+        }
 
+        .float-right {
+          text-align: left;
+        }
+      }
     </style>
   </head>
 
@@ -88,16 +91,25 @@ main > div {
           complex systems from scratch and understanding their architecture.
         </p>
 
+        <a href="https://github.com/aryanbaburajan">Github</a>
+        <a href="./aryanbaburajan.pdf">Resume</a>
+        <a href="https://x.com/aryanbaburajan">X</a>
+        <a href="https://aryanbaburajan.itch.io">Itch.io</a>
+
         <h3>Highlights</h3>
         <ul>
           <li>
-            Contributing to
-            <a href="https://serenityos.org/">SerenityOS</a> since March 2024:
-            Porting applications from ASCII to Unicode character encoding and
-            implementing a new GUI markup language for various applications.
+            <a href="https://github.com/SerenityOS/serenity/pulls?q=is%3Apr+author%3Aaryanbaburajan">Contributed to SerenityOS</a>:
+            Improving support for Unicode character encoding from ASCII and porting various
+            native applications to their new GUI markup language.
           </li>
           <li>
-            Delivered a talk at KochiFOSS — <em>(details to be added)</em>.
+            <a href="https://www.youtube.com/watch?v=m9-Aq3A2LyY">Delivered a talk at KochiFOSS</a>: to a 100+ member college audience as the youngest
+            student there from highschool sharing my experience in building a game engine from
+            scratch.
+          </li>
+          <li>
+            <a href="">TinkerPlay</a>: Held a workshop on the basics of Game Development to a room of first and second years using p5.js. Super proud about having taught them the joy of reading documentation, coding, and experimenting in their projects.
           </li>
         </ul>
 
@@ -122,39 +134,73 @@ main > div {
               </li>
             </ul>
           </li>
-          <li>Contributing to Blender.</li>
           <li>Finding ways to solve people’s problems through software.</li>
         </ul>
 
         <h3>Side Projects</h3>
         <ul>
           <li class="project-item">
-            <b>DirectShare</b> — File transfer application
+            <b>Mirage</b> — A personalized version of ProductHunt.com that caters to the user’s interests with a user authenticated product
+dashboard and an email newsletter system to periodically send recommendations through cron jobs
+            <span class="float-right">
+              [<a href="https://github.com/aryanbaburajan/mirage">github</a>]
+            </span>
+          </li>
+
+          <li class="project-item">
+            <b>DirectShare</b> — File sharing service
             <span class="float-right">
               [<a href="https://github.com/aryanbaburajan/directshare">github</a>]
             </span>
-            <ul>
-              <li>Developed a file transfer application.</li>
-              <li>Allowed for file transfer between clients from anywhere in the world.</li>
-              <li>Used Express.js, Ejs, Netlify.</li>
-            </ul>
           </li>
 
           <li class="project-item">
-            <b>Godspeed</b> — File transfer with rooms (incomplete)
-            <ul>
-              <li>Wrote a file transfer application.</li>
-              <li>Used web sockets to connect clients to rooms through which files could be shared.</li>
-              <li>Used Express.js, React, Websockets.</li>
-            </ul>
+            <b>Godspeed</b> — Room-based file transfer using WebSockets (incomplete)
+            <span class="float-right">
+              [<a href="https://github.com/aryanbaburajan/godspeed">github</a>]
+            </span>
           </li>
 
           <li class="project-item">
-            <b>Burrito</b> — Note-taking app (incomplete)
+            <b>Burrito</b> — Notion and Excalidraw combined into a Note-taking canvas (incomplete)
+            <span class="float-right">
+              [<a href="https://github.com/aryanbaburajan/burrito">github</a>]
+            </span>
+          </li>
+
+          <li class="project-item">
+            <b>Video Games</b>
             <ul>
-              <li>Built a note taking application that was meant as a mix of Notion and Excalidraw.</li>
-              <li>Wrote a canvas system for creating text &amp; images and manipulating their transforms.</li>
-              <li>Used Next.js, React.</li>
+              <li>
+                <b>Duck Duck Golf</b> — Golf obstacle course
+                <span class="float-right">
+                  [<a href="https://aryanbaburajan.itch.io/duck-duck-golf">itch.io</a>]
+                </span>
+              </li>
+              <li>
+                <b>Chaos Car Destruction</b> — Physics-based destruction game
+                <span class="float-right">
+                  [<a href="https://aryanbaburajan.itch.io/chaos-just-kinda-had-its-charm-ig">itch.io</a>]
+                </span>
+              </li>
+              <li>
+                <b>VROOM</b> — Procedurally generated track arcade racer
+                <span class="float-right">
+                  [<a href="https://aryanbaburajan.itch.io/vroom">itch.io</a>]
+                </span>
+              </li>
+              <li>
+                <b>Woosh</b> — Train railway sandbox
+                <span class="float-right">
+                  [<a href="https://aryanbaburajan.itch.io/woosh">itch.io</a>]
+                </span>
+              </li>
+              <li>
+                <b>Hectagon</b> — Procedural Island Generator
+                <span class="float-right">
+                  [<a href="https://aryanbaburajan.itch.io/hectagon">itch.io</a>]
+                </span>
+              </li>
             </ul>
           </li>
 
@@ -216,20 +262,6 @@ main > div {
               [<a href="https://lifetree.netlify.app">website</a>]
               [<a href="https://github.com/aryanbaburajan/lifetree">github</a>]
             </span>
-          </li>
-
-          <li class="project-item">
-            <b>Video Games</b>
-            <ul>
-              <li>Developed several games with the Unity game engine as a part of a lot of hackathons.</li>
-              <li>Learned 3D modelling with Blender.</li>
-              <li>
-                <b>Chaos Car Destruction</b> — Physics-based destruction game
-                <span class="float-right">
-                  [<a href="https://aryanbaburajan.itch.io/chaos-just-kinda-had-its-charm-ig">itch.io</a>]
-                </span>
-              </li>
-            </ul>
           </li>
         </ul>
 
